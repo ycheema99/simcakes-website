@@ -1,0 +1,53 @@
+a.nav-link {
+    font-size: 25px;
+    color: #000000;
+    /* Normal text color */
+    /* Additional styles */
+}
+
+a.nav-link:hover {
+    color: #79ADDC;
+    /* Text color on hover */
+}
+
+a.navbar-brand {
+    font-size: 45px;
+    color: #b47976;
+
+
+
+}
+
+a.navbar-brand:hover {
+    color: #79ADDC;
+    /* Text color on hover */
+}
+
+.navbar {
+    position: relative;
+    background-color: #ffffff;
+}
+
+.ms-auto {
+    position: absolute;
+    right: 10px;
+    /* Adjust as needed to move further right */
+    top: 50%;
+    transform: translateY(-50%);
+    /* Centers vertically */
+}
+
+.container {
+    margin-left: 40px !important;
+    margin-right: 0px !important;
+}
+
+.stylishText {
+    font-family: 'Pacifico', cursive;
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Shadow effect */
+    -webkit-text-stroke: 1px white;
+    /* White text border color and width */
+    letter-spacing: 3px;
+}
