@@ -1,18 +1,30 @@
-import { useState } from 'react'
-import CustomNavbar from './CustomNavbar'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import CustomNavbar from './CustomNavbar';
 import Wallpaper from './Wallpaper';
 import CakeCarousel from './CakeCarousel';
-import 'bootstrap/dist/css/bootstrap.min.css';
-function App() {
-  const [count, setCount] = useState(0)
+import Gallery from './Gallery';
+import Contact from './Contact';
+import Pricing from './Pricing';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+function App() {
   return (
-    <>
+    <Router>
       <CustomNavbar />
-      <Wallpaper />
-      <CakeCarousel />
-    </>
-  )
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Wallpaper />
+            <CakeCarousel />
+          </>
+        } />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/pricing" element={<Pricing />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
